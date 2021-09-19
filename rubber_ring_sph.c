@@ -1,12 +1,10 @@
 // Mass has been modified to account for boundaries -- changes in the initialize and the derivative
 // Added a function for artificial viscosity
 // Value of density changed
-// Added a function to test consistency
-// Changed mass of particles to ensure consistency
 // Changed Rhobar in the derivative function
 // Changed Fracture Criteria
 // Altered Monaghan's correction in VXBAR as well
-// Using B-Spline Kernel
+// Using Lucy's Kernel
 
 #include <stdio.h>
 #include <math.h>
