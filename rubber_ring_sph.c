@@ -506,7 +506,7 @@ void callprint(int loop) {
     fprintf(fp,"0.00000 0.00000\n");
     fprintf(fp,"ITEM: ATOMS id type xs ys zs sxx sxy syy\n");
     for(i=0; i<N; i++) {
-        fprintf(fp,"%d %d %lf %lf 0.000 %lf %lf %lf \n", i, 0, X[i], Y[i],(SXX[i] +P[i])*MASS[i]/RHO[i],(SXY[i] +P[i])*MASS[i]/RHO[i],(SYY[i] +P[i])*MASS[i]/RHO[i] );
+        fprintf(fp,"%d %d %lf %lf 0.000 %lf %lf %lf \n", i, 0, X[i], Y[i],(SXX[i] +P[i])*MASS[i]/RHO[i],(SXY[i])*MASS[i]/RHO[i],(SYY[i] +P[i])*MASS[i]/RHO[i] );
         //Total Energy calculation
         if(i< N-NB) {
             KE1 += 0.5 * MASS[i] * ( VX[i]*VX[i] + VY[i]*VY[i] );
